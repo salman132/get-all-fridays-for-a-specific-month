@@ -8,7 +8,7 @@ $fridays[0] = date('d',strtotime("first {$day} of ".$date));
 $fridays[1] = $fridays[0] + 7;
 $fridays[2] =  $fridays[0] + 14;
 $fridays[3] =  $fridays[0] + 21;
-$fridays['last'] = date('d',strtotime("last {$day} of this month"));
+$fridays['last'] = date('d',strtotime("last {$day} of ".$date));
 
 if($fridays[3] == $fridays['last']){
   unset($fridays['last']);
